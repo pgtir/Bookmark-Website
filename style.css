@@ -50,6 +50,9 @@ header nav .btn:hover, header nav .btn:active {
     .pill {
      padding-right: 0 !important;
     }
+    .pill2 {
+     padding-left: 0 !important;
+    }
 
 
 
@@ -61,6 +64,14 @@ header nav .btn:hover, header nav .btn:active {
      
      }
     
+    .blue-back2 {
+     height: 10.5rem;
+     background-color: hsl(231, 69%, 60%);
+     margin-right: 6rem;
+     border-bottom-right-radius: 43%;
+     
+     }
+    
 
   header section img {
       width: 88%;
@@ -68,13 +79,18 @@ header nav .btn:hover, header nav .btn:active {
       left: 8%;
       
   }  
+  #features article  img {
+      width: 83%;
+      right: 8%;
+      
+  }  
 
-  header section h1 {
+  header section h1, #features h3 {
       color: hsl(229, 31%, 21%);
       font-weight: 500;
   }
 
-  header section p {
+  header section p, #features p {
       color: hsl(229, 8%, 60%);
       font-size: 16px;
   }
@@ -116,6 +132,33 @@ header section .btn-white {
    flex: 1 1;
 }
 
+.nav-tabs .first {
+    color: hsl(229, 31%, 21%);
+    font-weight: 500;
+}
+
+.nav-tabs .second .nav-link, .nav-tabs .third .nav-link{
+    color: hsl(229, 8%, 60%) !important;
+    font-weight: 500;
+}
+
+.nav-tabs  .second, .third{
+    border-color: hsl(229, 8%, 60%);
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+ 
+    border-bottom: 1px solid hsl(229, 8%, 60%);
+   }
+
+   .nav-tabs .first .nav-link {
+    border: 0px solid transparent;
+    border-top: 1px solid hsl(229, 8%, 60%);
+       border-bottom: 4px solid hsl(0, 94%, 66%);
+       position: realtive;
+   }
+
+  
+
 @media (min-width: 1200px) {
 
     .manager{
@@ -130,11 +173,25 @@ header section .btn-white {
         margin-top: 7rem !important;
         
         }
+    .blue-back2 {
+        height: 16rem;
+        background-color: hsl(231, 69%, 60%);
+        margin-right: 8rem;
+        border-bottom-right-radius: 43%;
+        margin-top: 7rem !important;
+        
+        }
     header section img {
         /* width: 40%; */
         left: 0%;
         top: 0;
     }
+    #features article img {
+        /* width: 40%; */
+        right: 0%;
+        top: 0;
+    }
+}  
     
     @media (min-width: 1440px) {
 
@@ -151,11 +208,26 @@ header section .btn-white {
             
             
             }
+        .blue-back2 {
+            height: 16.5rem;
+            background-color: hsl(231, 69%, 60%);
+            margin-right: 10rem;
+            border-bottom-right-radius: 43%;
+            margin-top: 9rem !important;
+            
+            
+            }
         header section img {
             /* width: 40%; */
             left: 0%;
             top: 0;
         }
+        #features article img {
+            /* width: 40%; */
+            right: 0%;
+            top: 0;
+        }
+    }
 
     @media (min-width: 575px) and (max-width: 745px) {
         .btn-white {
@@ -183,9 +255,17 @@ header section .btn-white {
             /* width: %; */
             left: 8%;
         }
+        #features article img {
+            /* width: %; */
+        right: 8%;
+        }
+    }  
 
     @media (min-width: 450px) and (max-width: 510px) {
             .blue-back {
+                height: 15rem;
+            }
+            .blue-back2 {
                 height: 15rem;
             }
         }
@@ -195,10 +275,14 @@ header section .btn-white {
                 width: 80%;
                 left: 8%;
             }
+            #features article img {
+                width: 72%;
+                right: 8%;
+            }
         }
 
      
-     }   
+      
 
         
-    }
+    

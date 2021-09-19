@@ -1,8 +1,13 @@
 * {
     font-family: 'Rubik', sans-serif;
-    font-size: 16px;
-
+    font-size: 18px;
+    outline: none !important;
 }
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+
 .navbar-toggler {
     color: black;
     background-image: url(/images/icon-hamburger.svg);
@@ -11,31 +16,189 @@
     background-position: center;
 }
 
+header img {
+    font-size: 16px;
+}
+
+nav ul li a{
+    font-size: 16px;
+}
+
 nav ul li .nav-link {
     text-transform: uppercase;
     color: hsl(229, 31%, 21%);
 }
- nav ul li, header .btn {
+ nav ul li, header nav .btn {
      letter-spacing: 0.1rem;
  }
  nav ul li a:hover, nav ul li a:active {
      color: hsl(0, 94%, 66%) !important;
  }
 
-header .btn {
+header nav .btn {
     background-color: hsl(0, 94%, 66%) !important;
     text-transform: uppercase;
-    font-size: 17.5px;
+    font-size: 15px;
 }
 
-header .btn:hover, header .btn:active {
+header nav .btn:hover, header nav .btn:active {
     color: hsl(0, 94%, 66%)  !important;
     border: 2px solid hsl(0, 94%, 66%) !important;
     background-color: white !important;
     }
 
-    @media (min-width: 992) {
-        header img {
-            font-size: 16px;
+    .pill {
+     padding-right: 0 !important;
+    }
+
+
+
+    .blue-back {
+     height: 10.5rem;
+     background-color: hsl(231, 69%, 60%);
+     margin-left: 6rem;
+     border-bottom-left-radius: 43%;
+     
+     }
+    
+
+  header section img {
+      width: 88%;
+      height: 100%;
+      left: 8%;
+      
+  }  
+
+  header section h1 {
+      color: hsl(229, 31%, 21%);
+      font-weight: 500;
+  }
+
+  header section p {
+      color: hsl(229, 8%, 60%);
+      font-size: 16px;
+  }
+
+  header section .btn {
+    font-weight: 500;
+    font-size: 13.5px;
+}
+
+header section .btn-blue {
+    background-color: hsl(231, 69%, 60%) !important;
+}
+
+.btn-blue:hover , .btn-blue:active {
+    color: hsl(231, 69%, 60%) !important;
+    background-color: white !important;
+    border: 2px solid hsl(231, 69%, 60%) !important;
+}
+header section .btn-white {
+    background-color: white!important;
+    opacity: 50%;
+    color: hsl(229, 31%, 21%) ;
+    opacity: 80%;
+    box-shadow: 1px 2px 6px hsl(229, 8%, 60%);
+}
+.btn-white:hover , .btn-white:active {
+    color: hsl(229, 31%, 21%) !important;
+    background-color: white !important;
+    border: 2px solid hsl(229, 31%, 21%) !important;
+}
+
+.btns {
+    flex-wrap: wrap;
+    
+}
+
+.btn {
+   min-width: 148px;
+   flex: 1 1;
+}
+
+@media (min-width: 1200px) {
+
+    .manager{
+        margin-top: 3rem !important;
+    }
+
+    .blue-back {
+        height: 16rem;
+        background-color: hsl(231, 69%, 60%);
+        margin-left: 8rem;
+        border-bottom-left-radius: 43%;
+        margin-top: 7rem !important;
+        
         }
+    header section img {
+        /* width: 40%; */
+        left: 0%;
+        top: 0;
+    }
+    
+    @media (min-width: 1440px) {
+
+        .manager{
+            margin-top: 3rem !important;
+        }
+    
+        .blue-back {
+            height: 16.5rem;
+            background-color: hsl(231, 69%, 60%);
+            margin-left: 10rem;
+            border-bottom-left-radius: 43%;
+            margin-top: 9rem !important;
+            
+            
+            }
+        header section img {
+            /* width: 40%; */
+            left: 0%;
+            top: 0;
+        }
+
+    @media (min-width: 575px) and (max-width: 745px) {
+        .btn-white {
+            margin-left:0px !important;
+            margin-top: 12px !important;
+        }
+        .btn-blue {
+            margin-right: 0px !important;
+        }
+    
+    }
+
+    @media (min-width: 992px){
+        .btns {
+            display: block !important;
+        }
+    }
+
+    
+
+   
+
+    @media (min-width: 510px) and (max-width: 575px){
+        header section img {
+            /* width: %; */
+            left: 8%;
+        }
+
+    @media (min-width: 450px) and (max-width: 510px) {
+            .blue-back {
+                height: 15rem;
+            }
+        }
+
+    @media (min-width: 430px) and (max-width: 450px) {
+            header section img {
+                width: 80%;
+                left: 8%;
+            }
+        }
+
+     
+     }   
+
+        
     }

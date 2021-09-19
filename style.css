@@ -1,0 +1,41 @@
+* {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+
+}
+.navbar-toggler {
+    color: black;
+    background-image: url(/images/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    background-size: 25px 20px;
+    background-position: center;
+}
+
+nav ul li .nav-link {
+    text-transform: uppercase;
+    color: hsl(229, 31%, 21%);
+}
+ nav ul li, header .btn {
+     letter-spacing: 0.1rem;
+ }
+ nav ul li a:hover, nav ul li a:active {
+     color: hsl(0, 94%, 66%) !important;
+ }
+
+header .btn {
+    background-color: hsl(0, 94%, 66%) !important;
+    text-transform: uppercase;
+    font-size: 17.5px;
+}
+
+header .btn:hover, header .btn:active {
+    color: hsl(0, 94%, 66%)  !important;
+    border: 2px solid hsl(0, 94%, 66%) !important;
+    background-color: white !important;
+    }
+
+    @media (min-width: 992) {
+        header img {
+            font-size: 16px;
+        }
+    }
